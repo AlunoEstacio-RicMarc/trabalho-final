@@ -1,0 +1,49 @@
+/* Estilos gerais */
+body {
+    background-color: #64699C; /* Cor de fundo personalizada */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column; /* Organiza os itens de forma vertical */
+    text-align: center;
+}
+
+/* Estilo do título principal (Ficamos muito felizes) */
+.titulo-principal {
+    font-size: 1.8em; /* Reduzi o tamanho do texto */
+    font-weight: bold;
+    margin-top: 10px; /* Diminui a distância superior */
+}
+
+/* Estilo do texto "Até logo!" */
+.texto-secundario {
+    font-size: 1.2em; /* Tamanho menor que o anterior */
+    margin-top: 5px; /* Diminui a distância superior */
+}
+
+/* Estilo da imagem */
+img {
+    width: 60%; /* Reduzi o tamanho da imagem */
+    max-width: 300px;
+    margin-bottom: 10px; /* Diminui a distância abaixo da imagem */
+}
+
+/* Estilo do botão */
+.botao-inicio {
+    padding: 10px 20px; /* Menor que o anterior */
+    background-color: green;
+    color: white;
+    font-size: 1em; /* Tamanho menor do texto do botão */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px; /* Diminui a margem superior */
+}
+
+.botao-inicio:hover {
+    background-color: darkgreen;
+}

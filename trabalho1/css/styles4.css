@@ -1,0 +1,76 @@
+body {
+    background-color: #64699C;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Corpo da página de login */
+    height: 100vh;
+    margin: 0;
+    position: relative; /* Para que o botão "Voltar" se posicione adequadamente */
+}
+
+.back-button a {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #64699C;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.back-button a:hover {
+    background-color: #575f8c;
+}
+
+.login-container {
+    background-color: white;
+    border: 5px solid rgb(63, 64, 141);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h2 {
+    text-align: center;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #64699C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #575f8c;
+}
+
+.register-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.register-link a {
+    color: rgb(63, 64, 141);
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}

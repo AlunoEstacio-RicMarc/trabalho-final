@@ -1,0 +1,118 @@
+/* Estilos do card para garantir que ele tenha uma largura fixa mas responsiva */
+.plan {
+    border-radius: 16px;
+    box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
+    padding: 15px;
+    background-color: #fff;
+    color: #697e91;
+    max-width: 600px;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.plan .inner {
+    align-items: center;
+    padding: 15px;
+    background-color: #ecf0ff;
+    border-radius: 12px;
+    position: relative;
+}
+
+.plan .title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #425675;
+    margin-bottom: 10px;
+}
+
+.plan .info {
+    font-size: 0.85rem;
+    color: #697e91;
+    margin-bottom: 15px;
+}
+
+.plan .features {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.plan .features li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+}
+
+.plan .features .icon {
+    background-color: #1FCAC5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+}
+
+.plan .action {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 15px;
+}
+
+.plan .button {
+    background-color: #6558d3;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding: 0.5em 0.75em;
+    text-decoration: none;
+}
+
+.plan .button:hover, .plan .button:focus {
+    background-color: #4133B7;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .plan {
+        padding: 15px;
+    }
+
+    .plan .title {
+        font-size: 1.1rem;
+    }
+
+    .plan .info,
+    .plan .features li,
+    .plan h5 {
+        font-size: 0.9rem;
+    }
+}
+
+/* Ajustes para telas menores que 480px */
+@media (max-width: 480px) {
+    .plan {
+        max-width: 100%;
+        padding: 10px;
+    }
+    .plan .title {
+        font-size: 1rem;
+    }
+
+    .plan .info,
+    .plan .features li,
+    .plan h5 {
+        font-size: 0.8rem;
+    }
+}

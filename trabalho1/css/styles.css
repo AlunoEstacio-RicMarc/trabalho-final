@@ -1,0 +1,127 @@
+/* styles.css */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    background-image: url(imagens/fundo.webp); /* Fundo preto suave */
+    background-position: center;
+    background-size: cover;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 56px);
+}
+
+.card {
+    height: 400px; /* Altura do card */
+    width: auto; /* Largura do card */
+    border-radius: 1em;
+    overflow: hidden;
+    background-color: #1e1e1e; /* Cor de fundo do card */
+    box-shadow: none; /* Removendo o brilho dos cards */
+    font-family: sans-serif;
+    margin: 20px;
+    border: 3px solid rgba(0, 0, 0, 0.7); /* Borda preta com toque de azul */
+}
+
+.palette {
+    display: flex;
+    height: 86%;
+    width: 100%;
+}
+
+.color {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black; /* Mudando a cor do texto para preto */
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: flex 0.1s linear;
+    position: relative; /* Para posicionar o texto */
+    overflow: hidden; /* Para esconder o texto */
+}
+
+.color span {
+    transition: opacity 0.3s linear;
+    opacity: 1; /* Padrão visível */
+}
+
+.color:hover span {
+    opacity: 0; /* Texto desaparece ao passar o mouse */
+}
+
+.color:nth-child(1) {
+    background: rgb(63, 64, 141); /* Azul Escuro */
+}
+
+.color:nth-child(2) {
+    background: rgb(255, 255, 255); /* Branco */
+}
+
+.color:nth-child(3) {
+    background: rgb(12, 133, 206); /* Azul Claro */
+}
+
+.color:hover {
+    flex: 2;
+    /* Removendo sombra no hover */
+}
+
+/* Texto alternativo que aparece no hover */
+.color:nth-child(1) .info,
+.color:nth-child(2) .info,
+.color:nth-child(3) .info {
+    display: none; /* Esconder texto padrão */
+}
+
+.color:nth-child(1):hover .info,
+.color:nth-child(2):hover .info,
+.color:nth-child(3):hover .info {
+    display: block; /* Mostrar texto alternativo ao passar o mouse */
+    color: black; /* Garantir que o texto alternativo também seja preto */
+}
+
+.color:nth-child(1):hover span,
+.color:nth-child(2):hover span,
+.color:nth-child(3):hover span {
+    display: none; /* Esconder o texto padrão ao passar o mouse */
+}
+
+#stats {
+    height: 14%;
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.5em;
+    box-sizing: border-box;
+    color: #bebebe;
+}
+
+#stats svg {
+    fill: #bebebe;
+    transform: scale(1.2);
+}
+
+.navbar img {
+    height: 70px; /* Aumentando o tamanho da imagem */
+    margin-right: 15px; /* Margem à direita para separar do texto */
+}
+
+.footer-message {
+    background-color: #000000; /* Cor de fundo para o rodapé do card */
+    padding: 10px; /* Aumentando o padding para melhor aparência */
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 2em; /* Aumentando o tamanho da fonte */
+    width: 100%; /* Largura total do card */
+}
